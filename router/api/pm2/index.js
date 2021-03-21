@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
     // console.log(await info());
-    exec('python ./lib/python/info.py', (err, stdout, stderr) => {
+    exec('python C:/pro/Dorit/doritHUB/lib/python/info.py', (err, stdout, stderr) => {
         if (err) {
             console.error(`exec error: ${err}`);
             return {};
